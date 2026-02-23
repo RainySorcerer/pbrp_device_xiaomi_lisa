@@ -29,6 +29,9 @@ on fs
 on init
     setprop sys.usb.configfs 1 
 
+chmod 0777 /system/bin/bootctrl-remove.sh
+    start bootctrl-remove
+
 on property:twrp.modules.loaded=true
     # Load ADSP firmware for PMIC
     wait /sys/kernel/boot_adsp/boot
@@ -77,3 +80,9 @@ on boot
 
 #
 
+service bootctrl-remove /system/bin/bootctrl-remove.sh
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
