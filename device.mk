@@ -89,8 +89,8 @@ TW_INCLUDE_REPACKTOOLS := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 2047
-TW_Y_OFFSET := 104
-TW_H_OFFSET := -104
+TW_Y_OFFSET := 28
+TW_H_OFFSET := 6
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
@@ -100,6 +100,12 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone50/temp"
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
 TW_FRAMERATE := 60
+
+# TWRP notch offsets
+TW_STATUS_ICONS_ALIGN := left
+TW_X_OFFSET := 10
+TW_W_OFFSET := -10
+TW_CUSTOM_CPU_POS := 150
 
 # Crypto
 TW_INCLUDE_CRYPTO := true
