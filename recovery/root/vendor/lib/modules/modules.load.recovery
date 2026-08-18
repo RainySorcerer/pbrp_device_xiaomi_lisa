@@ -1,0 +1,16 @@
+adsp_loader_dlkm.ko
+apr_dlkm.ko
+exfat.ko
+goodix_core.ko
+goodix_ts_gesture.ko
+goodix_ts_tools.ko
+hwid.ko
+mmhardware_others.ko
+mmhardware_sysfs_dlkm.ko
+msm_drm.ko
+q6_dlkm.ko
+q6_notifier_dlkm.ko
+q6_pdr_dlkm.ko
+qti_battery_charger_main_k8.ko
+snd_event_dlkm.ko
+xiaomi_touch.ko
