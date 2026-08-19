@@ -21,12 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # Inherit from lisa device
 $(call inherit-product, device/xiaomi/lisa/device.mk)
 
-# Inherit some common TWRP stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+# Inherit some common PBRP stuff.
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := lisa
-PRODUCT_NAME := twrp_lisa
+PRODUCT_NAME := pb_lisa
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := 2109119DG
+PRODUCT_MODEL := Mi 11 Lite 5G NE
 PRODUCT_MANUFACTURER := Xiaomi

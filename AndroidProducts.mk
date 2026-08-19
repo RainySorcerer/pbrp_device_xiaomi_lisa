@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/twrp_lisa.mk
+     $(LOCAL_DIR)/pb_lisa.mk
